@@ -93,15 +93,42 @@ body{
 .banner-btn{
     position: relative;
 }
-.banner-img{
+/* .banner-img{
     background-image: url(../assets/images/Circle\ design.svg);
     background-repeat: no-repeat;
     background-position: left 5px center;
     width: 550px;
     margin-top: 40px;
+} */
+/* .banner-main-img{
+    position: relative;
+    padding-top: 100px;
+    padding-right: 80px;
+}
+.banner-background-img{
+    position: absolute;
+    top: 180px;
+    
+} */
+
+.banner-main-img {
+  position: relative;
+  padding-top: 100px;
+  padding-right: 80px;
+  width: 100%;
+  max-width: 350px;
 }
 
-
+.banner-background-img {
+  position: absolute;
+  top: 180px;
+  width: 100%;
+  max-width: 400px;
+  /* left: 0; */
+  left: 78%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
 /* media query */
 
 /* mobile device */
@@ -122,8 +149,44 @@ body{
 
     .banner-content{
         width: 90%;
+        margin-top: 20px;
+        text-align: center;
+        margin-bottom: 25px;
     }
-    .banner-img img{
-        width: 80%;
-        background-image: none;
+    .banner-main-img {
+    padding-top: 60px;
+    padding-right: 30px;
+    max-width: 250px;
+  }
+
+  .banner-background-img {
+    top: 120px;
+    max-width: 280px;
+    right: 50%;
+    left: 50%;
+    top: 250px;
+    bottom: 50%;
+  }
+
+}
+
+/* medium device  */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+        .banner{
+            flex-direction: column-reverse;
+        }
+        .banner-images{
+            width: 100%;
+            align-items: center;
+        }
+        .banner-content{
+            margin-top: 25px;
+            text-align: center;
+        }
+        .banner-background-img{
+            top: 20%;
+            left: 45%;
+        }
+
 }
