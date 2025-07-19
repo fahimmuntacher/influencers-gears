@@ -89,6 +89,15 @@ header, main{
     margin-top: 25px;
     margin-bottom: 30px;
 }
+.sponsor{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-top: 100px;
+    align-items: center;
+    padding: 25px;
+    border-top: 2px solid rgba(128, 128, 128, 0.116);
+    border-bottom: 2px solid rgba(128, 128, 128, 0.116);
+}
 
 
 /* media query start */
@@ -135,4 +144,16 @@ header, main{
        background-position: center;
        
     }
-}
+    .sponsor{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .sponsor img{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+} 
